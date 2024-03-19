@@ -2,21 +2,21 @@
   "development": {
     "username": "root",
     "password": "",
-    "database": "nonfinitebets",
+    "database": "u498357097_nonfinitebets",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
     "password": "",
-    "database": "nonfinitebets",
+    "database": "u498357097_nonfinitebets",
     "host": "localhost",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
     "password": "",
-    "database": "nonfinitebets",
+    "database": "u498357097_nonfinitebets",
     "host": "localhost",
     "dialect": "mysql"
   }
