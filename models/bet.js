@@ -18,6 +18,7 @@ module.exports = (sequelize, DataTypes) => {
     team1: DataTypes.STRING,
     team2: DataTypes.STRING,
     amount: DataTypes.DOUBLE,
+    result: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'Bet',
