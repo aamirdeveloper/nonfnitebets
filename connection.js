@@ -4,7 +4,8 @@ let connection = mysql.createConnection({
     host: '185.232.14.52',
     user: 'u498357097_nonfinitebets',
     password: 'zg!bIw7*W',
-    database: 'u498357097_nonfinitebets'
+    database: 'u498357097_nonfinitebets',
+    port: 3307
 });
 
 connection.connect(function(err) {
