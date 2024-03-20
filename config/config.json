@@ -1,23 +1,23 @@
 {
   "development": {
-    "username": "u498357097_settrade",
+   "host": "185.232.14.52",
+    "user": "u498357097_nonfinitebets",
     "password": "7WDzrvxdMLPjt",
     "database": "u498357097_nonfinitebets",
-    "host": "srv1098.hstgr.io",
     "dialect": "mysql"
   },
   "test": {
-    "username": "u498357097_settrade",
+    "host": "185.232.14.52",
+    "user": "u498357097_nonfinitebets",
     "password": "7WDzrvxdMLPjt",
     "database": "u498357097_nonfinitebets",
-    "host": "srv1098.hstgr.io",
     "dialect": "mysql"
   },
   "production": {
-    "username": "u498357097_settrade",
+   "host": "185.232.14.52",
+    "user": "u498357097_nonfinitebets",
     "password": "7WDzrvxdMLPjt",
     "database": "u498357097_nonfinitebets",
-    "host": "srv1098.hstgr.io",
     "dialect": "mysql"
   }
 }
