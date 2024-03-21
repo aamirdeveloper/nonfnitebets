@@ -1,10 +1,10 @@
 let mysql = require('./node_modules/mysql2');
 
 let connection = mysql.createConnection({
-    host: '185.232.14.52',
-    user: 'u498357097_nonfinitebets',
-    password: 'zg!bIw7*W',
-    database: 'u498357097_nonfinitebets'
+    host: '162.241.85.156',
+    user: 'olysprle_nonfinite',
+    password: '6JLSca$hv?,!',
+    database: 'olysprle_nonfinitebets'
 });
 
 connection.connect(function(err) {
