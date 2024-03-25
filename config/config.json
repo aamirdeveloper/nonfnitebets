@@ -1,23 +1,23 @@
 {
   "development": {
    "host": "localhost",
-    "user": "root",
-    "password": "HtFzO9d$",
-    "database": "nonfinitebets",
+    "user": "bets",
+    "password": "o$65I3tKUl",
+    "database": "nonfinite",
     "dialect": "mysql"
   },
   "test": {
     "host": "localhost",
-    "user": "root",
-    "password": "HtFzO9d$",
-    "database": "nonfinitebets",
+    "user": "bets",
+    "password": "o$65I3tKUl",
+    "database": "nonfinite",
     "dialect": "mysql"
   },
   "production": {
     "host": "localhost",
-    "user": "root",
-    "password": "HtFzO9d$",
-    "database": "nonfinitebets",
+    "user": "bets",
+    "password": "o$65I3tKUl",
+    "database": "nonfinite",
     "dialect": "mysql"
   }
 }
