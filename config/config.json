@@ -1,20 +1,20 @@
 {
   "development": {
-   "host": "localhost",
+   "host": "srv493472",
     "user": "aamir",
     "password": "o$65I3tKUl",
     "database": "nonfinite",
     "dialect": "mysql"
   },
   "test": {
-    "host": "localhost",
+    "host": "srv493472",
     "user": "aamir",
     "password": "o$65I3tKUl",
     "database": "nonfinite",
     "dialect": "mysql"
   },
   "production": {
-    "host": "localhost",
+    "host": "srv493472",
     "user": "aamir",
     "password": "o$65I3tKUl",
     "database": "nonfinite",
