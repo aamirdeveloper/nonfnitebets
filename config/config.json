@@ -1,6 +1,6 @@
 {
   "development": {
-   "host": "localhost",
+   "host": "154.56.63.138",
     "user": "nonfinite",
     "password": "Aamir@321",
     "database": "nonfinitebets",
@@ -8,7 +8,7 @@
     "port": 3306
   },
   "test": {
-    "host": "localhost",
+    "host": "154.56.63.138",
     "user": "nonfinite",
     "password": "Aamir@321",
     "database": "nonfinitebets",
@@ -16,7 +16,7 @@
     "port": 3306
   },
   "production": {
-    "host": "localhost",
+    "host": "154.56.63.138",
     "user": "nonfinite",
     "password": "Aamir@321",
     "database": "nonfinitebets",
