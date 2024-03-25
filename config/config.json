@@ -4,23 +4,20 @@
     "user": "nonfinite",
     "password": "Aamir@321",
     "database": "nonfinitebets",
-    "dialect": "mysql",
-    "port": 3306
+    "dialect": "mysql"
   },
   "test": {
     "host": "localhost",
     "user": "nonfinite",
     "password": "Aamir@321",
     "database": "nonfinitebets",
-    "dialect": "mysql",
-    "port": 3306
+    "dialect": "mysql"
   },
   "production": {
     "host": "localhost",
     "user": "nonfinite",
     "password": "Aamir@321",
     "database": "nonfinitebets",
-    "dialect": "mysql",
-    "port": 3306
+    "dialect": "mysql"
   }
 }
