@@ -1,23 +1,23 @@
 {
   "development": {
-   "host": "162.241.85.156",
-    "user": "olysprle_nonfinite",
-    "password": "6JLSca$hv?,!",
-    "database": "olysprle_nonfinitebets",
+   "host": "localhost",
+    "user": "nonfinite",
+    "password": "Aamir@321",
+    "database": "nonfinitebets",
     "dialect": "mysql"
   },
   "test": {
-    "host": "162.241.85.156",
-    "user": "olysprle_nonfinite",
-    "password": "6JLSca$hv?,!",
-    "database": "olysprle_nonfinitebets",
+    "host": "localhost",
+    "user": "nonfinite",
+    "password": "Aamir@321",
+    "database": "nonfinitebets",
     "dialect": "mysql"
   },
   "production": {
-   "host": "162.241.85.156",
-    "user": "olysprle_nonfinite",
-    "password": "6JLSca$hv?,!",
-    "database": "olysprle_nonfinitebets",
+    "host": "localhost",
+    "user": "nonfinite",
+    "password": "Aamir@321",
+    "database": "nonfinitebets",
     "dialect": "mysql"
   }
 }
