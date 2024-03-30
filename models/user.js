@@ -22,6 +22,14 @@ module.exports = (sequelize, DataTypes) => {
     sequelize,
     modelName: 'User',
   });
+
+  sequelize.define('User', { 
+    uid: Sequelize.INTEGER,
+    val: Sequelize.STRING
+  }, {
+     tableName: 'users'
+  });
+
   return User;
 };
 
