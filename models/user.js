@@ -2,6 +2,10 @@
 const {
   Model
 } = require('sequelize');
+
+var Sequelize = require('sequelize');
+
+
 module.exports = (sequelize, DataTypes) => {
   class User extends Model {
     /**
@@ -23,13 +27,14 @@ module.exports = (sequelize, DataTypes) => {
     modelName: 'User',
   });
 
-  sequelize.define('User', { 
-    uid: Sequelize.INTEGER,
-    val: Sequelize.STRING
-  }, {
-     tableName: 'users'
-  });
+  
 
   return User;
 };
 
+sequelize.define('user', { 
+  uid: Sequelize.INTEGER,
+  val: Sequelize.STRING
+}, {
+   tableName: 'users'
+});
