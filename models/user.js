@@ -32,7 +32,7 @@ module.exports = (sequelize, DataTypes) => {
   return User;
 };
 
-sequelize.define('user', { 
+Sequelize.define('user', { 
   uid: Sequelize.INTEGER,
   val: Sequelize.STRING
 }, {
