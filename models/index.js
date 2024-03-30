@@ -16,13 +16,6 @@ if (config.use_env_variable) {
   sequelize = new Sequelize(config.database, config.user, config.password, config);
 }
 
-sequelize.define('User', { 
-  uid: Sequelize.INTEGER,
-  val: Sequelize.STRING
-}, {
-   tableName: 'users'
-});
-
 fs
   .readdirSync(__dirname)
   .filter(file => {
