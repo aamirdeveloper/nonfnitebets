@@ -31,10 +31,3 @@ module.exports = (sequelize, DataTypes) => {
 
   return User;
 };
-
-Sequelize.define('user', { 
-  uid: Sequelize.INTEGER,
-  val: Sequelize.STRING
-}, {
-   tableName: 'users'
-});
