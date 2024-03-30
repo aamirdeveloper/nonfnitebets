@@ -24,3 +24,9 @@ module.exports = (sequelize, DataTypes) => {
   });
   return User;
 };
+
+sequelize.define('User', {
+  // ... (attributes)
+}, {
+  tableName: 'users'
+});
