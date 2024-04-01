@@ -21,7 +21,7 @@ module.exports = (sequelize, DataTypes) => {
     userBalance: DataTypes.DOUBLE,
   }, {
     sequelize,
-    freezeTableName: true,
+    //freezeTableName: true,
     modelName: 'User',
   });
   return User;
