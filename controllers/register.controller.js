@@ -11,6 +11,7 @@ function index(req, res){
         name: req.body.name,
         email: req.body.email,
         password: req.body.password,
+        phone: ""
     }
 
     const schema = {
@@ -29,6 +30,7 @@ function index(req, res){
             errors: validationResponse
         });
     }
+    
     models.User.findOne({where:{email:req.body.email}}).then(result =>{
         if(result === null){
             bycryptjs.genSalt(10, function(err, salt){
