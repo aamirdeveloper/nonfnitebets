@@ -15,6 +15,9 @@ const transactionRoute = require('./routes/transaction');
 const betsRoute = require('./routes/bets');
 const userRoute = require('./routes/user');
 
+//admin routes
+const adminRoute = require('./routes/admin');
+
 app.use(bodyParser.json());
 app.use(cors());
 
@@ -24,6 +27,9 @@ app.use("/register", registerRoute);
 app.use("/transaction", transactionRoute);
 app.use("/bets", betsRoute);
 app.use("/user", userRoute);
+
+//admin routes
+app.use("/admin", adminRoute);
 
 app.use('/uploads', express.static('./uploads'));
 

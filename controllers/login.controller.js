@@ -29,6 +29,7 @@ function login(req, res){
                         "userId": result.id,
                         "email": result.email,
                         "name": result.name,
+                        "phone": result.phone,
                         "token": token
                     };
 
@@ -44,8 +45,7 @@ function login(req, res){
     }).catch(error => {
         res.status(200).json({
             status: 2,
-            message: "Something went wrong",
-            reason: error
+            message: "Something went wrong"
         });
     });
 }
