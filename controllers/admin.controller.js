@@ -198,7 +198,11 @@ function pendingMatches(req, res) {
     }
     else
     {
-        models.Match.findAll().then(result => {
+        models.Match.findAll({
+            where: {
+                status: 0
+            }
+        }).then(result => {
             res.status(200).json({
                 status: 1,
                 data: result
