@@ -44,8 +44,7 @@ function login(req, res){
     }).catch(error => {
         res.status(200).json({
             status: 2,
-            message: "Something went wrong",
-            error: error
+            message: "Something went wrong"
         });
     });
 }
@@ -190,9 +189,83 @@ function bets(req, res){
     }
 }
 
+function pendingMatches(req, res) {
+    let resp = helper.check_token(req);
+    if(resp !== "Successfully Verified")
+    {
+        console.error(`Token error`, resp);
+        res.json(resp);
+    }
+    else
+    {
+        models.Match.findAll().then(result => {
+            res.status(200).json({
+                status: 1,
+                data: result
+            });
+        }).catch(error => {
+            res.status(200).json({
+                status: 2,
+                message: "Something went wrong!",
+                error: error
+            });
+        });
+    }
+}
+
+function setMatchesLive(req, res) {
+    let resp = helper.check_token(req);
+    if(resp !== "Successfully Verified")
+    {
+        console.error(`Token error`, resp);
+        res.json(resp);
+    }
+    else
+    {
+        const post = {
+            matchIds: req.body.matchIds
+        }
+
+        const schema = {
+            matchIds: {type: "array", optional: false}
+        }
+
+        const v = new Validator();
+        const validationResponse = v.validate(post, schema);
+
+        if(validationResponse !== true){
+            return res.status(200).json({
+                status: 0,
+                message: "validation failed",
+                errors: validationResponse
+            });
+        }
+
+        const dt = {
+            status: 1
+        }
+        
+        models.Match.update(dt, {where:{
+            id: post.matchIds
+        }}).then(result => {
+            res.status(200).json({
+                status: 1,
+                message: "Data updated"
+            });
+        }).catch(error => {
+            res.status(200).json({
+                status: 0,
+                message: "Something went wrong!"
+            });
+        });
+    }
+}
+
 module.exports = {
     login: login,
     change_password: change_password,
     users: users,
-    bets: bets
+    bets: bets,
+    pendingMatches: pendingMatches,
+    setMatchesLive: setMatchesLive
 }
